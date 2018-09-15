@@ -13,7 +13,7 @@ jobs:
           command: docker build -t taijuten/circle-node-awscli:${CIRCLE_BUILD_NUM} -t taijuten/circle-node-awscli:latest .
       - run:
           name: docker push
-          command: docker push
+          command: docker push taijuten/circle-node-awscli
 workflows:
   version: 2
   build_and_push:
