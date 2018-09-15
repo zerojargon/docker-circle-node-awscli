@@ -6,6 +6,7 @@ jobs:
   buildAndPush:
     <<: *defaults
     steps:
+      - setup_remote_docker
       - checkout
       - run:
           name: docker build
