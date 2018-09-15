@@ -22,5 +22,5 @@ workflows:
   build_and_push:
     jobs:
       - buildAndPush:
-        context:
-          - docker
+          context:
+            - docker
